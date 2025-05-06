@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img href="https://youtu.be/P-I77T8SokE"><img src="/src/epboticon.png" alt="ep bot logo" width="250"></img>
+  <img href="https://youtu.be/P-I77T8SokE"><img src="assets/logo.png" alt="logo" width="250"></img>
   </br>
   Education Perfected
 </h1>
@@ -31,24 +31,10 @@ EducationPerfect Bot is a cross-platform desktop app that uses Puppeteer and Ele
 ### ✅ Features
 
 - Fully automated answer generation and submission
-- Works on most EP list activities
+- Works on every EP list
 - Easy to run: just download and open!
 - Cross-platform: Windows, macOS, Linux
-- No need to install browser extensions
-
----
-
-## 📚 documentation
-
-```bash
-EducationPerfected/
-├── main.js                 # Electron main process
-├── preload.js              # Bridge between renderer and EP site
-├── renderer/               # GUI frontend (HTML/CSS/JS)
-├── auto-answer/            # Question answering logic (DOM scripts)
-├── package.json
-└── README.md
-```
+- No need to install anything
 
 ---
 
@@ -56,7 +42,7 @@ EducationPerfected/
 
 ### Option 1: Run Prebuilt App (Recommended)
 
-1. Go to [Releases](https://github.com/keyp0s/epbot/releases)
+1. Go to [Releases](https://github.com/Nardo021/EducationPerfected/releases)
 2. Download the latest version for your OS (`.exe`, `.dmg`, `.AppImage`)
 3. Run it – no setup required
 
@@ -80,18 +66,8 @@ npm run build  # Uses electron-builder to generate .exe / .app / .AppImage
 ## 🧠 expected behavior
 
 - The app will launch a browser window and auto-navigate to [educationperfect.com](https://www.educationperfect.com/).
-- Once logged in, it will begin answering list tasks automatically.
+- Once logged in, go to the task that you want to answer, DO NOT PRESS START MANUUALY, then click start on the gui/terminal
 - GUI allows you to pause/resume, change speed, and view logs.
-
----
-
-## ⌨️ hotkeys
-
-| Key        | Function            |
-|------------|---------------------|
-| `Ctrl + Shift + P` | Pause/Resume auto answering |
-| `Ctrl + Shift + S` | Skip current question       |
-| `Ctrl + Shift + L` | Open log panel              |
 
 ---
 
@@ -104,7 +80,7 @@ The author is **not responsible** for any misuse or policy violations.
 
 ## 📄 license
 
-MIT License © 2025 [your name or GitHub username]
+MIT License © 2025 Nardo021
 
 ---
 
