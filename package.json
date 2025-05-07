@@ -1,0 +1,26 @@
+{
+  "name": "ep-god",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nardo021/E-Perfected.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nardo021/E-Perfected/issues"
+  },
+  "homepage": "https://github.com/Nardo021/E-Perfected#readme",
+  "dependencies": {
+    "electron": "^35.1.5",
+    "puppeteer": "^24.6.1"
+  }
+}

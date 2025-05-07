@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Education Perfected</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Education Perfected</h1>
+    <button onclick="refresh()">Refresh</button>
+    <button onclick="start()">Start</button>
+    <button onclick="toggle()">Toggle</button>
+
+    <script>
+        const refreshBtn = document.getElementById('refreshBtn');
+        const toggleBtn = document.getElementById('toggleBtn');
+        const startBtn = document.getElementById('startBtn');
+
+        refreshBtn.disabled = true;
+        toggleBtn.disabled = true;
+        startBtn.disabled = true;
+
+        window.electronAPI.onStatusUpdate((ready) => {
+            refreshBtn.disabled = !ready;
+            toggleBtn.disabled = !ready;
+            startBtn.disabled = !ready;
+        });
+
+        function start() {
+            window.electronAPI.sendCommand('start'); // 这里是 index.js 的 start => answerLoop
+        }
+
+        function refresh() {
+            window.electronAPI.sendCommand('refresh');
+        }
+
+        function toggle() {
+            window.electronAPI.sendCommand('toggle');
+        }
+    </script>
+
+</body>
+
+</html>
